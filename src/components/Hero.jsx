@@ -1,8 +1,4 @@
-import HeroCard from "./HeroCard";
-import brain from '/brain.svg'
-import heart from '/heart.svg'
-import bone from '/bone.svg'
-import mother from '/mother.svg'
+
 
 const Hero = () => {
   return (

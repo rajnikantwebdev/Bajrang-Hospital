@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#horizontalCard {
+    background-image: url('./../public/doctors-bg.webp');
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
