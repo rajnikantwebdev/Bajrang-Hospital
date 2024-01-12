@@ -1,7 +1,7 @@
 function Card({ borderDirection, rounded }) {
   
     return (
-      <div className={`bg-[#F2BA33] border-black ${borderDirection} max-w-[25rem] ${rounded} py-4 px-4 lg:py-8`}>
+      <div className={`bg-[#F2BA33] border-black ${borderDirection} max-w-[25rem] ${rounded} py-4 px-4 lg:py-8 shadow-md lg:shadow-none rounded-xl lg:rounded-none`}>
         <div className="heading">
           <h1 className="text-2xl font-bold mb-4">Goals</h1>
         </div>

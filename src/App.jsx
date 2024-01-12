@@ -1,18 +1,21 @@
-import Hero from "./components/Hero";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Homepage";
+import HeartPage from "./pages/HeartPage";
 import StcikyNavbar from "./components/Navbar";
-import Services from "./components/Services";
-import IdealandGoal from "./components/IdealandGoal";
-import HorizontalCard from "./components/Cards Holder/HorizontalCard";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <StcikyNavbar />
-      <Hero />
-      <Services />
-      <IdealandGoal />
-      <HorizontalCard/>
-    </div>
+    <>
+    <StcikyNavbar/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/heart" element={<HeartPage/>} />
+        </Routes>
+      </Router>
+      <Footer/>
+    </>
   );
 }
 
